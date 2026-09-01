@@ -1,8 +1,9 @@
 import { Play } from "lucide-react";
+import cake1 from "../assets/cake7.png";
 
 const HeroSection = () => {
   return (
-    <section className="mx-auto max-w-7xl px-6 py-12 md:py-20">
+    <section className="mx-auto max-w-[1450px] px-6 py-12 md:py-20">
       <div className="grid items-center gap-12 md:grid-cols-2">
         {/* Left Side: Text Content */}
         <div>
@@ -30,6 +31,17 @@ const HeroSection = () => {
               <Play size={16} className="fill-purple-dark text-purple-dark" />
               Our Menu
             </button>
+          </div>
+        </div>
+
+        {/* Right Side: Image */}
+        <div className="relative flex justify-center items-center">
+          <div className="absolute -z-10  h-[420px] w-[420px] rounded-full bg-lavender md:h-[480px] md:w-[480px]">
+            <img
+              src={cake1}
+              alt="cake"
+              className="w-full max-w-md object-contain drop-shadow-xl"
+            />
           </div>
         </div>
       </div>
