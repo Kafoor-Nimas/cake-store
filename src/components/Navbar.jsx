@@ -7,7 +7,7 @@ const Navbar = () => {
       <nav className="mx-auto flex max-w-[1500px] items-center justify-between px-6 py-5">
         <a
           href="/"
-          className="font-script text-3xl items-center justify-center text-purple-dark"
+          className="font-script text-3xl text-purple-dark"
         >
           Anti
         </a>
