@@ -1,11 +1,12 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./style.css";
+import Navbar from "./components/Navbar";
 
 const Main = () => {
   return (
     <div>
-      <h1 className="text-3xl font-bold underline">Cake store</h1>
+      <Navbar />
     </div>
   );
 };
