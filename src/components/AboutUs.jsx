@@ -1,5 +1,7 @@
 import { Award, Heart, ShieldCheck } from "lucide-react";
 
+import Img from "../assets/about.jfif";
+
 const values = [
   {
     icon: ShieldCheck,
@@ -21,24 +23,40 @@ const values = [
 const AboutUs = () => {
   return (
     <section className="mx-auto max-w-[1500px] px-6 py-12">
-        <div className="grid grid-cols-1 gap-10 items-center lg:grid-cols-3">
-
-            {/* Left Column : Text */}
-            <div className="space-y-4">
-                <span className="text-xs font-semibold uppercase tracking-wider text-gray-400">About Us</span>
-                <h2 className="text-3xl fond-bold text-gray-900 leading-tight">The Heart Behind Every Bake</h2>
-                <p className="text-sm text-gray-600 leading-relaxed">At Anti, we believe that the best moments in life are sweet. Our mission is to create baked goods that bring people together and make every moment special.</p>
-                <button className="mt-2 rounded-full bg-purple-dark px-6 py-2.5 text-xs font-semibold text-white transition-colors hover:bg-purple">Learn More About Us</button>
-
-            </div>
-            {/* Center Column : Image */}
-            {/* Right Column : Value */}
-
-
+      <div className="grid grid-cols-1 gap-10 items-center lg:grid-cols-3">
+        {/* Left Column : Text */}
+        <div className="space-y-4">
+          <span className="text-xs font-semibold uppercase tracking-wider text-gray-400">
+            About Us
+          </span>
+          <h2 className="text-3xl fond-bold text-gray-900 leading-tight">
+            The Heart Behind Every Bake
+          </h2>
+          <p className="text-sm text-gray-600 leading-relaxed">
+            At Anti, we believe that the best moments in life are sweet. Our
+            mission is to create baked goods that bring people together and make
+            every moment special.
+          </p>
+          <button className="mt-2 rounded-full bg-purple-dark px-6 py-2.5 text-xs font-semibold text-white transition-colors hover:bg-purple">
+            Learn More About Us
+          </button>
         </div>
+        {/* Center Column : Image */}
+        <div className="flex justify-center">
+          <div className="overflow-hidden rounded-3xl shadow-md">
+            <img
+              src={Img}
+              alt="Cake Image"
+              className="h-[360px] w-full object-cover"
+            />
+          </div>
+        </div>
+        {/* Right Column : Value */}
+        <div className="">
 
+      </div>
     </section>
-  )
-}
+  );
+};
 
-export default AboutUs
+export default AboutUs;
