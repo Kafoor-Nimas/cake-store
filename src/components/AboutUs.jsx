@@ -52,8 +52,19 @@ const AboutUs = () => {
           </div>
         </div>
         {/* Right Column : Value */}
-        <div className="">
-
+        <div className="space-y-6">
+          {values.map(({ icon: Icon, title, description }) => (
+            <div key={title} className="flex items-start gap-4">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-lavender text-purple-dark">
+                <Icon size={20} />
+              </div>
+              <div>
+                <h3 className="font-semibold text-gray-900 text-sm">{title}</h3>
+                <p className="text-xs text-gray-500 mt-0.5">{description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
