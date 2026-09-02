@@ -7,6 +7,7 @@ import Features from "./components/Features";
 import PromoBanners from "./components/PromoBanners";
 import Bestsellers from "./components/Bestsellers";
 import AboutUs from "./components/AboutUs";
+import TrustStrip from "./components/TrustStrip";
 
 const Main = () => {
   return (
@@ -17,6 +18,7 @@ const Main = () => {
       <PromoBanners />
       <Bestsellers />
       <AboutUs />
+      <TrustStrip />
     </div>
   );
 };
