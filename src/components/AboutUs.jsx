@@ -1,10 +1,10 @@
-import { Award, Heart, ShieldCheck } from "lucide-react";
+import { Handshake, Heart, Award } from "lucide-react";
 
-import Img from "../assets/about.jfif";
+import Img from "../assets/about2.webp";
 
 const values = [
   {
-    icon: ShieldCheck,
+    icon: Award,
     title: "Quality",
     description: "We never compromise on quality.",
   },
@@ -14,7 +14,7 @@ const values = [
     description: "Baking is not just our business, it's our passion.",
   },
   {
-    icon: Award,
+    icon: Handshake,
     title: "Trust",
     description: "Thousands trust us for their sweet celebrations.",
   },
@@ -22,17 +22,17 @@ const values = [
 
 const AboutUs = () => {
   return (
-    <section className="mx-auto max-w-[1500px] px-6 py-12">
+    <section className="mx-auto max-w-[1500px] px-6 py-12 bg-lavender/40 rounded-3xl">
       <div className="grid grid-cols-1 gap-10 items-center lg:grid-cols-3">
         {/* Left Column : Text */}
         <div className="space-y-4">
-          <span className="text-xs font-semibold uppercase tracking-wider text-gray-400">
+          <span className="text-sm font-semibold uppercase tracking-wider text-purple">
             About Us
           </span>
-          <h2 className="text-3xl fond-bold text-gray-900 leading-tight">
+          <h2 className="mt-4  text-3xl  text-gray-900 leading-tight">
             The Heart Behind Every Bake
           </h2>
-          <p className="text-sm text-gray-600 leading-relaxed">
+          <p className="text-sm max-w-md text-gray-600 leading-relaxed">
             At Anti, we believe that the best moments in life are sweet. Our
             mission is to create baked goods that bring people together and make
             every moment special.
@@ -47,20 +47,23 @@ const AboutUs = () => {
             <img
               src={Img}
               alt="Cake Image"
-              className="h-[360px] w-full object-cover"
+              className="h-[260px] w-[340px]  object-cover"
             />
           </div>
         </div>
         {/* Right Column : Value */}
-        <div className="space-y-6">
+        <div className="space-y-5 mt-10">
           {values.map(({ icon: Icon, title, description }) => (
-            <div key={title} className="flex items-start gap-4">
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-lavender text-purple-dark">
+            <div
+              key={title}
+              className="flex items-start gap-4 bg-white/30 p-4 rounded-xl shadow-sm"
+            >
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-lavender text-purple-dark">
                 <Icon size={20} />
               </div>
               <div>
-                <h3 className="font-semibold text-gray-900 text-sm">{title}</h3>
-                <p className="text-xs text-gray-500 mt-0.5">{description}</p>
+                <h3 className="font-semibold text-gray-900 ">{title}</h3>
+                <p className="text-sm text-gray-500 mt-0.5">{description}</p>
               </div>
             </div>
           ))}
