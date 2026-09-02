@@ -1,3 +1,5 @@
+import img from "../assets/cat1.jpg";
+
 const categories = [
   { name: "Cakes", icon: "🎂" },
   { name: "Cupcakes", icon: "🧁" },
@@ -17,7 +19,6 @@ const Categories = () => {
             Crafted for Every Craving
           </h2>
           <p className="mt-4 max-w-md text-gray-500">
-            {" "}
             Explore our wide range of baked goodies made just for you.
           </p>
 
@@ -35,13 +36,19 @@ const Categories = () => {
             ))}
           </div>
 
-          <button className="mt-8 rounded-full bg-purple px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-purple-dark">
-            View Full Menu
-          </button>
+          <div className="mt-8 flex justify-center">
+            <button className="rounded-full bg-purple px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-purple-dark">
+              View Full Menu
+            </button>
+          </div>
         </div>
         {/* Righ Side : image */}
-        
-
+        <div className="overflow-hidden rounded-3xl shadow-md">
+          <img
+            src={img}
+            alt="cake making"
+            className=" h-[320px] md:h-[400px] w-full object-cover"
+          />
         </div>
       </div>
     </div>
