@@ -47,7 +47,7 @@ const AboutUs = () => {
             <img
               src={Img}
               alt="Cake Image"
-              className="h-[260px] w-[340px]  object-cover"
+              className="h-[220px] w-full max-w-[340px] object-cover sm:h-[260px]"
             />
           </div>
         </div>
