@@ -2,7 +2,7 @@ import { ShoppingCart } from "lucide-react";
 
 const ProductCart = ({ image, name, price }) => {
   return (
-    <div className="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-gray-100 transition-shadow hover:shadow-md">
+    <div className="rounded-2xl bg-white p-4 shadow-sm transition-shadow hover:shadow-md">
       <div className="overflow-hidden rounded-xl bg-gray-50">
         <img
           src={image}
@@ -13,7 +13,7 @@ const ProductCart = ({ image, name, price }) => {
       <div className="mt-4 flex items-center justify-between">
         <div>
           <h3 className="font-semibold text-gray-900">{name}</h3>
-          <p className="mt-1 text-sm font-semibold text-purple-dark">
+          <p className="mt-1 text-sm font-bold text-gray-900">
             ${price.toFixed(2)}
           </p>
         </div>
