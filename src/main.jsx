@@ -9,6 +9,7 @@ import Bestsellers from "./components/Bestsellers";
 import AboutUs from "./components/AboutUs";
 import TrustStrip from "./components/TrustStrip";
 import Categories from "./components/Categories";
+import Footer from "./components/Footer";
 
 const Main = () => {
   return (
@@ -20,7 +21,8 @@ const Main = () => {
       <Bestsellers />
       <AboutUs />
       <TrustStrip />
-      <Categories/>
+      <Categories />
+      <Footer />
     </div>
   );
 };
