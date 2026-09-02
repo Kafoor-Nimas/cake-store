@@ -6,6 +6,7 @@ import HeroSection from "./components/HeroSection";
 import Features from "./components/Features";
 import PromoBanners from "./components/PromoBanners";
 import Bestsellers from "./components/Bestsellers";
+import AboutUs from "./components/AboutUs";
 
 const Main = () => {
   return (
@@ -15,6 +16,7 @@ const Main = () => {
       <Features />
       <PromoBanners />
       <Bestsellers />
+      <AboutUs />
     </div>
   );
 };
