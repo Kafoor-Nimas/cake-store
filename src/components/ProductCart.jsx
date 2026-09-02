@@ -13,7 +13,7 @@ const ProductCart = ({ image, name, price }) => {
       <div className="mt-4 flex items-center justify-between">
         <div>
           <h3 className="font-semibold text-gray-900">{name}</h3>
-          <p className="mt-1 text-sm font-bold text-gray-900">
+          <p className="mt-1 text-sm font-semibold text-gray-900">
             ${price.toFixed(2)}
           </p>
         </div>

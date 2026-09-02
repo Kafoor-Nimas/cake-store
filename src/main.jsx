@@ -10,6 +10,7 @@ import AboutUs from "./components/AboutUs";
 import TrustStrip from "./components/TrustStrip";
 import Categories from "./components/Categories";
 import Footer from "./components/Footer";
+import Banner from "./components/Banner";
 
 const Main = () => {
   return (
@@ -22,6 +23,7 @@ const Main = () => {
       <AboutUs />
       <TrustStrip />
       <Categories />
+      <Banner/>
       <Footer />
     </div>
   );
