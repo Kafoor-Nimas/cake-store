@@ -1,9 +1,16 @@
-import { ShoppingBag, User } from "lucide-react";
+import { Menu, ShoppingBag, User, X } from "lucide-react";
+import { useEffect, useState } from "react";
 
 const navLinks = ["Home", "Menu", "About Us", "Our Story", "Blog", "Contact"];
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "";
+  }, [isOpen]);
+
   return (
-    <header className="w-full border-b border-gray-300 shadow-md sticky top-0 z-100 bg-white">
+    <header className="w-full border-b border-gray-300 shadow-md sticky top-0 z-50 bg-white">
       <nav className="mx-auto flex max-w-[1500px] items-center justify-between px-6 py-5 ">
         <a href="/" className="font-script text-3xl text-purple-dark">
           Anti
@@ -34,11 +41,38 @@ const Navbar = () => {
             </span>
           </button>
 
-          <button className="rounded-full bg-purple px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-purple-dark ">
+          <button className="hidden md:block rounded-full bg-purple px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-purple-dark ">
             Order Now
+          </button>
+
+          {/* Humburger Menu */}
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="text-gray-700 hover:text-purple-dark md:hidden focus:outline-none"
+          >
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
       </nav>
+
+      {isOpen && (
+        <div className="border-t border-gray-100 bg-white px-6 py-4 md:hidden">
+          <ul className="flex flex-col items-start justify-center gap-4 text-sm font-medium text-gray-700 ">
+            {navLinks.map((link) => (
+              <li key={link} className="border-b border-gray-100 last:border-0">
+                <a
+                  href="#"
+                  onClick={() => setIsOpen(false)}
+                  className="block py-1 transition-colors hover:text-purple-dark "
+                >
+                  {link}
+                </a>
+              </li>
+            ))}
+          </ul>
+          
+        </div>
+      )}
     </header>
   );
 };
