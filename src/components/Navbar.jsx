@@ -3,12 +3,9 @@ import { ShoppingBag, User } from "lucide-react";
 const navLinks = ["Home", "Menu", "About Us", "Our Story", "Blog", "Contact"];
 const Navbar = () => {
   return (
-    <header className="w-full">
-      <nav className="mx-auto flex max-w-[1500px] items-center justify-between px-6 py-5">
-        <a
-          href="/"
-          className="font-script text-3xl text-purple-dark"
-        >
+    <header className="w-full border-b border-gray-300 shadow-md sticky top-0 z-100 bg-white">
+      <nav className="mx-auto flex max-w-[1500px] items-center justify-between px-6 py-5 ">
+        <a href="/" className="font-script text-3xl text-purple-dark">
           Anti
         </a>
 
