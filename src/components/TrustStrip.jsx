@@ -26,13 +26,18 @@ const items = [
 const TrustStrip = () => {
   return (
     <section className="bg-purple my-8">
-      <div className="mx-auto grid max-w-[1500px]grid-cols-1 sm:grid-cols-2 gap-6 px-6 py-8 md:grid-cols-4 md:py-10">
+      <div className="mx-auto grid max-w-[1500px]   grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-6 py-8  md:py-10">
         {items.map(({ icon: Icon, title, description }) => (
           <div
             key={title}
-            className="flex flex-col sm:flex-row items-center text-center sm:text-left gap-3"
+            className="group flex flex-col sm:flex-row items-center text-center sm:text-left gap-3 transition-transform duration-300 hover:-translate-y-1"
           >
-            <Icon size={26} className="shrink-0 text-white" />
+            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white/10 transition-all duration-300 group-hover:scale-110 group-hover:bg-white/20">
+              <Icon
+                size={22}
+                className="text-white transition-transform duration-300 group-hover:rotate-6"
+              />
+            </div>
             <div>
               <h3 className="text-xs sm:text-sm font-semibold text-white">
                 {title}
