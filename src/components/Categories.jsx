@@ -1,4 +1,4 @@
-import img from "../assets/cat1.jpg";
+import img from "../assets/deco.jfif";
 
 const categories = [
   { name: "Cakes", icon: "🎂" },

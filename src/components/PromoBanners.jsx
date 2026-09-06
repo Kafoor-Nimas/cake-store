@@ -13,34 +13,34 @@ const PromoBanners = () => {
             <p className="mt-1 text-base font-semibold uppercase tracking-wide text-white/90 sm:text-lg">
               For Every Moment
             </p>
-            <p className="mt-4 text-sm text-white/80">
+            <p className="mt-4 text-sm text-white/80 hidden sm:block">
               From classic cakes to decadent cookies, we have treats for every
               craving.
             </p>
-            <button className="mt-6 rounded-full bg-white px-6 py-3 text-sm font-semibold text-purple-dark transition-colors hover:bg-lavender">
+            <button className="mt-6 rounded-full bg-white text-sm px-4 py-2 sm:px-6 sm:py-3 sm:text-sm font-semibold text-purple-dark transition-colors hover:bg-lavender ">
               Explore Menu
             </button>
           </div>
           <img
             src={Cookie}
             alt="Cookies"
-            className="absolute -right-4 xl:bottom-0 w-52 object-contain md:w-60 bottom-6"
+            className="absolute -right-4 xl:bottom-0 w-40 sm:w-52 object-contain md:w-60 bottom-6"
           />
         </div>
 
         {/* Right Side */}
-        <div className="relative overflow-hidden rounded-3xl bg-[#fdcbe4] px-8 py-10">
+        <div className="relative overflow-hidden rounded-3xl bg-[#fdcbe4] px-8 py-6 sm:py-10">
           <div className="relative z-10 max-w-[65%] sm:max-w-[55%] mt-14 lg:mt-2">
-            <p className="text-base sm:text-lg font-semibold text-gray-700">
+            <p className="text-sm sm:text-lg font-semibold text-gray-700">
               Deal of the Day
             </p>
-            <p className="mt-2 text-3xl sm:text-4xl font-semibold text-rose-400">
+            <p className="mt-2 text-2xl sm:text-4xl font-semibold text-rose-400">
               20%OFF
             </p>
-            <p className="mt-1 font-semibold text-gray-800 text-base sm:text-lg">
+            <p className="mt-1 font-semibold text-gray-800 text-sm sm:text-lg">
               On All Pastries
             </p>
-            <button className="mt-6 rounded-full bg-rose-400 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-rose-600">
+            <button className="mt-6 rounded-full bg-rose-400 px-6 py-3 text-xs sm:text-sm font-semibold text-white transition-colors hover:bg-rose-600">
               Grab the Deal
             </button>
           </div>
@@ -48,7 +48,7 @@ const PromoBanners = () => {
           <img
             src={CakeSlice}
             alt="Cake Slice"
-            className="absolute -right-0 lg:bottom-4 bottom-16 w-52 object-contain md:w-60 mr-1"
+            className="absolute -right-0 lg:bottom-4 bottom-16 w-40 sm:w-52 object-contain md:w-60 mr-1 "
           />
         </div>
       </div>

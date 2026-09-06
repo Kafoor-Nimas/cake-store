@@ -9,11 +9,11 @@ const Banner = () => {
             Planning a Celebration? Enjoy 10% Off <br /> Your First Milestone
             Cake.
           </h2>
-          <p className="mt-2 text-lg text-white/80 max-w-2xl xl:max-w-full">
+          <p className="mt-2 text-sm sm:text-lg text-white/80 max-w-2xl xl:max-w-full">
             Enjoy 10% OFF your very first celebratory cake order with our
             complimentary greeting card.
           </p>
-          <button className="mt-6 rounded-full bg-white px-6 py-3 text-md font-semibold text-purple-dark transition-colors hover:bg-lavender">
+          <button className="mt-6 rounded-full bg-white px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-md font-semibold text-purple-dark transition-colors hover:bg-lavender">
             Claim Offer Now
           </button>
         </div>
@@ -21,7 +21,7 @@ const Banner = () => {
         <img
           src={bannerImage}
           alt="Banner"
-          className="absolute bottom-0 right-0  hidden w-80  object-contain md:block mr-4"
+          className="absolute bottom-0 right-0  hidden w-80  object-contain md:block mr-4 opacity-30 lg:opacity-100"
         />
       </div>
     </section>
