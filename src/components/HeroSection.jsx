@@ -4,18 +4,17 @@ import cake1 from "../assets/cake7.png";
 
 const HeroSection = () => {
   return (
-    <section className="mx-auto max-w-[1250px] px-6 py-8 md:py-16 overflow-hidden">
+    <section className="mx-auto max-w-[1300px] px-6 py-8 md:py-16 overflow-hidden">
       <div className="grid items-center gap-8 md:grid-cols-[1.15fr_1fr]">
         {/* Left Side: Text Content */}
         <div className="text-center md:text-left">
-          <h1 className="text-4xl font-bold leading-tight text-gray-900 sm:text-5xl md:text-6xl">
-            Baked with
+          <h1 className="text-4xl font-bold leading-tight text-gray-900 sm:text-5xl md:text-6xl font-serif">
+            Baked With
+            <span className="text-purple"> Love,</span>
             <br />
-            <span className="text-purple">Love,</span>
+            Made For Every
             <br />
-            Made for
-            <br />
-            <span className="text-purple">You!</span>
+            <span className="text-purple"> Celebration!</span>
           </h1>
           {/* <img
             src={heart}
@@ -24,8 +23,9 @@ const HeroSection = () => {
           /> */}
 
           <p className="mt-4 md:mt-6 max-w-md mx-auto md:mx-0 text-gray-600 text-sm md:text-base">
-            Every bite is a perfect blend of fresh ingredients and pure
-            happiness.
+            Delicious handcrafted cakes made with premium ingredients, bespoke
+            artisanal designs, and a generous dose of heartfelt confectionery
+            devotion.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center justify-center md:justify-start gap-4">
@@ -46,7 +46,7 @@ const HeroSection = () => {
             <img
               src={cake1}
               alt="Cake"
-              className="w-full max-w-[260px] sm:max-w-xs md:max-w-md object-contain drop-shadow-xl"
+              className="w-full max-w-[260px] sm:max-w-xs md:max-w-md lg:max-w-lg object-contain drop-shadow-xl"
             />
           </div>
         </div>
