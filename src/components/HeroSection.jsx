@@ -1,6 +1,5 @@
 import { Play } from "lucide-react";
-import cake1 from "../assets/cake7.png";
-// import heart from "../assets/hero.jpg";
+import cake1 from "../assets/heroCake3.jfif";
 
 const HeroSection = () => {
   return (
@@ -42,11 +41,11 @@ const HeroSection = () => {
 
         {/* Right Side: Responsive Circle Container */}
         <div className="relative flex justify-center items-center py-6">
-          <div className="relative flex items-center justify-center h-[280px] w-[280px] sm:h-[380px] sm:w-[380px] md:h-[500px] md:w-[500px] lg:h-[550px] lg:w-[550px] rounded-full bg-lavender">
+          <div className="relative flex items-center justify-center h-[280px] w-[280px] sm:h-[380px] sm:w-[380px] md:h-[500px] md:w-[500px] lg:h-[550px] lg:w-[550px] ">
             <img
               src={cake1}
               alt="Cake"
-              className="w-full max-w-[260px] sm:max-w-xs md:max-w-md lg:max-w-lg object-contain drop-shadow-xl"
+              className="w-full max-w-[260px] sm:max-w-xs md:max-w-md lg:max-w-xl object-contain "
             />
           </div>
         </div>
