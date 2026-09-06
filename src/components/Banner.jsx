@@ -1,22 +1,28 @@
-import bannerImage from "../assets/banner7.webp"
+import bannerImage from "../assets/banner7.webp";
 
 const Banner = () => {
   return (
-    <section className="mx-auto max-w-[1500px] px-6 py-6">
-      <div className="relative overflow-hidden rounded-3xl bg-purple-dark px-8 py-12 text-center md:text-left">
-        <div className="relative z-10 md:max-w-xs">
-          <h2 className="text-3xl font-bold text-white">
-            Life is Better with Cake!
+    <section className="mx-auto max-w-[1500px] px-8 py-6">
+      <div className="relative overflow-hidden rounded-3xl bg-purple-dark px-12 py-12 text-center md:text-left">
+        <div className="relative z-10 md:max-w-s ">
+          <h2 className="text-md sm:text-2xl md:text-3xl xl:text-4xl font-semibold text-white ">
+            Planning a Celebration? Enjoy 10% Off <br /> Your First Milestone
+            Cake.
           </h2>
-          <p className="mt-2 text-sm text-white/80">
-            Order cake and make every moment sweeter.
+          <p className="mt-2 text-lg text-white/80 max-w-2xl xl:max-w-full">
+            Enjoy 10% OFF your very first celebratory cake order with our
+            complimentary greeting card.
           </p>
-          <button className="mt-6 rounded-full bg-white px-6 py-3 text-sm font-semibold text-purple-dark transition-colors hover:bg-lavender">
-            Order Now
+          <button className="mt-6 rounded-full bg-white px-6 py-3 text-md font-semibold text-purple-dark transition-colors hover:bg-lavender">
+            Claim Offer Now
           </button>
         </div>
 
-        <img src={bannerImage} alt="Banner" className="absolute bottom-0 right-0 hidden w-80  object-contain md:block" />
+        <img
+          src={bannerImage}
+          alt="Banner"
+          className="absolute bottom-0 right-0  hidden w-80  object-contain md:block mr-4"
+        />
       </div>
     </section>
   );
