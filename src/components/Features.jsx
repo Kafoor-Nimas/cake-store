@@ -28,12 +28,15 @@ const Features = () => {
     <section className="mx-auto max-w-[1500px] px-6 py-6">
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 rounded-3xl bg-lavender/40 px-8 py-10">
         {features.map(({ icon: Icon, title, description }) => (
-          <div key={title} className="flex flex-col items-center text-center ">
-            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-white text-purple-dark shadow-sm">
-              <Icon size={24} />
+          <div
+            key={title}
+            className="flex flex-col items-center text-center rounded-2xl bg-white px-6 py-8 shadow-sm border border-gray-100 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-lavender text-purple-dark shadow-sm">
+              <Icon size={26} />
             </div>
-            <h3 className="font-semibold text-gray-700">{title}</h3>
-            <p className="mt-1 text-sm text-gray-500">{description}</p>
+            <h3 className="font-semibold text-gray-800">{title}</h3>
+            <p className="mt-2 text-sm text-gray-500">{description}</p>
           </div>
         ))}
       </div>
