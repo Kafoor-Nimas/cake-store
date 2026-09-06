@@ -13,7 +13,7 @@ const products = [
 
 const Bestsellers = () => {
   return (
-    <section className="mx-auto max-w-[1500px] px-6 py-12">
+    <section className="mx-auto max-w-[1500px] px-6 py-6">
       <div className="mb-8 flex items-center justify-between">
         <h2 className="text-3xl font-bold text-gray-900">Our Bestsellers</h2>
         <button className="rounded-full border border-gray-300 px-5 py-2 text-sm font-semibold text-white bg-purple transition-colors hover:bg-purple-dark">

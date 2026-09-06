@@ -16,7 +16,7 @@ const Navbar = () => {
           Anti
         </a>
 
-        <ul className="hidden items-center gap-8 text-sm font-medium text-gray-700 md:flex">
+        <ul className="hidden items-center gap-8 lg:gap-16 text-sm font-medium text-gray-700 md:flex">
           {navLinks.map((link) => (
             <li key={link}>
               <a

@@ -25,7 +25,7 @@ const features = [
 
 const Features = () => {
   return (
-    <section className="mx-auto max-w-[1500px] px-6 py-6">
+    <section className="mx-auto max-w-[1500px] px-6 py-2">
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 rounded-3xl bg-lavender/40 px-8 py-10">
         {features.map(({ icon: Icon, title, description }) => (
           <div

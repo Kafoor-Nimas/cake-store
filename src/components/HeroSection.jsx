@@ -3,7 +3,7 @@ import cake1 from "../assets/heroCake3.jfif";
 
 const HeroSection = () => {
   return (
-    <section className="mx-auto max-w-[1300px] px-6 py-8 md:py-16 overflow-hidden">
+    <section className="mx-auto max-w-[1300px] px-6 py-4  overflow-hidden">
       <div className="grid items-center gap-8 md:grid-cols-[1.15fr_1fr]">
         {/* Left Side: Text Content */}
         <div className="text-center md:text-left">
