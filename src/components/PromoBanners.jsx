@@ -1,16 +1,16 @@
 import Cookie from "../assets/Cookies6.webp";
-import CakeSlice from "../assets/CakeSlice3.webp";
+import CakeSlice from "../assets/cake3d12.jfif";
 const PromoBanners = () => {
   return (
     <section className="mx-auto max-w-[1500px] px-6 py-10">
       <div className="grid gap-6 md:grid-cols-2">
         {/* Left Side */}
         <div className="relative overflow-hidden rounded-3xl bg-purple px-8 py-10">
-          <div className="relative z-10 max-w-[60%]">
-            <h3 className="text-3xl font-bold leading-tight text-white">
+          <div className="relative z-10 max-w-[65%] sm:max-w-[60%]">
+            <h3 className="text-2xl font-bold leading-tight text-white sm:text-3xl">
               Sweet Delights
             </h3>
-            <p className="mt-1 text-lg font-semibold uppercase tracking-wide text-white/90">
+            <p className="mt-1 text-base font-semibold uppercase tracking-wide text-white/90 sm:text-lg">
               For Every Moment
             </p>
             <p className="mt-4 text-sm text-white/80">
@@ -29,13 +29,15 @@ const PromoBanners = () => {
         </div>
 
         {/* Right Side */}
-        <div className="relative overflow-hidden rounded-3xl bg-pink-200 px-8 py-10">
-          <div className="relative z-10 max-w-[55%] mt-14 lg:mt-2">
-            <p className="text-lg font-semibold text-gray-700">
+        <div className="relative overflow-hidden rounded-3xl bg-[#fdcbe4] px-8 py-10">
+          <div className="relative z-10 max-w-[65%] sm:max-w-[55%] mt-14 lg:mt-2">
+            <p className="text-base sm:text-lg font-semibold text-gray-700">
               Deal of the Day
             </p>
-            <p className="mt-2 text-4xl font-semibold text-rose-400">20%OFF</p>
-            <p className="mt-1 font-semibold text-gray-800 text-lg">
+            <p className="mt-2 text-3xl sm:text-4xl font-semibold text-rose-400">
+              20%OFF
+            </p>
+            <p className="mt-1 font-semibold text-gray-800 text-base sm:text-lg">
               On All Pastries
             </p>
             <button className="mt-6 rounded-full bg-rose-400 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-rose-600">
@@ -46,7 +48,7 @@ const PromoBanners = () => {
           <img
             src={CakeSlice}
             alt="Cake Slice"
-            className="absolute -right-2 lg:bottom-8 bottom-18 w-50 object-contain md:w-60"
+            className="absolute -right-0 lg:bottom-4 bottom-16 w-52 object-contain md:w-60 mr-1"
           />
         </div>
       </div>
